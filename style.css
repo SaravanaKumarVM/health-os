@@ -1,0 +1,11 @@
+body{margin:0;font-family:system-ui;background:#f4f6fb;}
+.page{display:none;padding:15px;}
+.active{display:block;}
+.card{background:#fff;border-radius:14px;padding:14px;margin-bottom:12px;}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+.stat{background:#eef2ff;padding:12px;border-radius:12px;text-align:center;}
+input,textarea{width:100%;padding:10px;border-radius:10px;border:1px solid #ccc;margin-top:6px;}
+button{background:#2563eb;color:#fff;border:none;padding:12px;border-radius:10px;width:100%;margin-top:8px;}
+.nav{position:fixed;bottom:0;width:100%;display:flex;background:#fff;border-top:1px solid #ddd;}
+.nav div{flex:1;text-align:center;padding:10px;color:#666;}
+.nav .on{color:#2563eb;font-weight:600;}
