@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Health OS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="dash" class="page active">
+  <h2>📊 Dashboard</h2>
+  <div class="card grid">
+    <div class="stat">Calories In<br><b id="calIn">--</b></div>
+    <div class="stat">Burned<br><b id="calBurn">--</b></div>
+    <div class="stat">Protein<br><b id="protein">--</b></div>
+    <div class="stat">Water<br><b id="water">--</b></div>
+    <div class="stat">Weight<br><b id="weight">--</b></div>
+    <div class="stat">Discipline<br><b id="disc">--</b></div>
+  </div>
+</div>
+
+<div id="add" class="page">
+  <h2>➕ Add Entry</h2>
+  <div class="card">
+    <textarea id="inputBox" placeholder="Type anything..."></textarea>
+    <button onclick="processEntry()">Add</button>
+  </div>
+</div>
+
+<div id="hist" class="page">
+  <h2>📜 History</h2>
+  <div id="historyBox" class="card"></div>
+</div>
+
+<div id="prof" class="page">
+  <h2>👤 Profile</h2>
+  <div class="card">
+    Calorie Target<input id="calTarget" value="1800">
+    Protein Target<input id="proTarget" value="120">
+    Water Target<input id="waterTarget" value="3">
+  </div>
+</div>
+
+<div class="nav">
+  <div onclick="show('dash')" class="on">🏠</div>
+  <div onclick="show('add')">➕</div>
+  <div onclick="show('hist')">📜</div>
+  <div onclick="show('prof')">👤</div>
+</div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
