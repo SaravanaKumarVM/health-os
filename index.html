@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Health OS</title>
+  <title>Health OS</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div id="dash" class="page active">
-  <h2>📊 Dashboard</h2>
-  <div class="card grid">
-    <div class="stat">Calories In<br><b id="calIn">--</b></div>
-    <div class="stat">Burned<br><b id="calBurn">--</b></div>
-    <div class="stat">Protein<br><b id="protein">--</b></div>
-    <div class="stat">Water<br><b id="water">--</b></div>
-    <div class="stat">Weight<br><b id="weight">--</b></div>
-    <div class="stat">Discipline<br><b id="disc">--</b></div>
+  <h2>Today’s Summary</h2>
+
+  <div class="grid2">
+    <div class="cardStat fire"><span>Calories In</span><h1 id="calInEl">0</h1><small>kcal</small></div>
+    <div class="cardStat run"><span>Calories Burned</span><h1 id="calBurnEl">0</h1><small>kcal</small></div>
+    <div class="cardStat blue"><span>Net Calories</span><h1 id="netCalEl">0</h1><small>kcal</small></div>
+    <div class="cardStat dumb"><span>Protein</span><h1 id="proteinEl">0</h1><small>g</small></div>
+
+    <div class="cardStat water"><span>Water</span><h1 id="waterEl">0</h1><small>L</small></div>
+    <div class="cardStat weight"><span>Weight</span><h1 id="weightEl">--</h1><small>kg</small></div>
+    <div class="cardStat mood low"><span>Mood</span><h1 id="moodEl">LOW</h1></div>
+    <div class="cardStat disc"><span>Discipline</span><h1 id="discEl">0%</h1></div>
   </div>
 </div>
 
 <div id="add" class="page">
   <h2>➕ Add Entry</h2>
   <div class="card">
-    <textarea id="inputBox" placeholder="Type anything..."></textarea>
+    <textarea id="inputBox" placeholder="Type anything like: had 3 idly and 2 vada, badminton 40 min, today weight 94kg, drinken water"></textarea>
     <button onclick="processEntry()">Add</button>
   </div>
 </div>
